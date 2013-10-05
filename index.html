@@ -3,7 +3,26 @@
  <head>
   <meta charset="UTF-8">
   <title>Shopping site</title>
-  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="css/nivo-slider.css" type="text/css">
+  <script type='text/javascript' src='js/jquery-1.9.0.min.js'></script>
+  <script type='text/javascript' src='js/jquery.nivo.slider.js'></script>
+  <script type='text/javascript' src='js/jquery.nivo.slider.pack.js'></script>
+  <script type='text/javascript'>
+  $(window).on('load', function() {
+  	$('#slider').nivoSlider({
+  		effect : 'random', /* エフェクトの種類 */
+        captionOpacity : 0.8, /* キャプション背景の透過度 */
+        animSpeed : 1000, /* エフェクトのスピード */
+        pauseTime : 5000, /* 間隔の時間 */
+        slices : 6, /* スライスエフェクトの数 */
+        directionNav : true, /* 前へ、次への表示 */
+        prevText : '<', /* 前への文字 */
+        nextText : '>', /* 次への文字 */
+        controlNav : false, /* ページャーの使用 */
+  	});
+  });
+  </script>
  </head>
 
  <body>
@@ -13,12 +32,37 @@
  			<nav>
  				<ul>
  					<li><a href="index.html">Home</a></li>
- 					<li><a href=""></a></li>
- 					<li><a href=""></a></li>
- 					<li><a href=""></a></li>
- 					<li><a href=""></a></li>
+ 					<li><a href=""></a>Clothes</li>
+ 					<li><a href=""></a>Goods</li>
+ 					<li><a href=""></a>About us</li>
+ 					<li><a href=""></a>Location</li>
+ 					<li><a href=""></a>Search</li>
  				</ul>
  			</nav>
  		</header>
+
+ 		<section>
+ 			<div id="slider">
+ 			<a href="#"><img src="images/nemo.jpg" alt="" title="Title #1" /></a>
+            <a href="#"><img src="images/toystory.jpg" alt="" title="Title #2" /></a>
+            <a href="#"><img src="images/up.jpg" alt="" title="Title #3" /></a>
+            </div>
+
+            <div id="caption1" class="nivo-html-caption">
+            	<h3>ここにタイトル</h3>
+            	<p>ここにテキスト<a href="#">リンク</a>もOKです</p>
+            </div>
+            <div id="caption2" class="nivo-html-caption">
+            	<h3>tittle</h3>
+            	<p>text<a href="#">link</a></p>
+            </div>
+            <div id="caption3" class="nivo-html-caption">
+            	<h3>tittle</h3>
+            	<p>text<a href="#">link</a></p>
+            </div>
+ 		</section>
+
+ 		<footer>
+ 		</footer>
  </body>
 </html>
