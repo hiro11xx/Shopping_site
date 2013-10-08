@@ -1,5 +1,17 @@
 body {
-	background-image: url(../images/background3.gif);
+	background-image: url(../images/background2.gif);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="image"],
+textarea,
+select {
+    outline:none;
+}
+
+#clear {
+    clear: both;
 }
 
 /* Slider */
@@ -15,26 +27,26 @@ body {
  }
 
  /* Navigation */
- nav {
+ #navTop {
  	width: 900px;
  	margin-left: auto;
  	margin-right: auto;
  }
 
- nav ul {
+ #navTop ul {
  	margin: 0, 20;
  	padding: 0;
  	list-style: none;
  }
 
- nav li {
+ #navTop li {
  	float: left;
  	font-size: 18px;
  	padding: 0;
- 	margin: 0 22px 20px 22px;
+ 	margin: 0 14px 20px 14px;
  }
 
- nav li a {
+ #navTop li a {
  	display: block;
  	position: relative;
  	text-decoration: none;
@@ -56,7 +68,7 @@ body {
     text-shadow: 0 -1px 0 #ff8fdb;
  }
 
- nav span{
+ #navTop span{
     border: 1px dashed #ff8fdb;
     display: inline-block;
     padding: 4px 15px;
@@ -73,3 +85,64 @@ body {
     -webkit-border-radius: 20px;
     border-radius: 20px;
 }
+
+/* Search */
+
+input.searchForm {
+
+}
+
+input.searchBox {
+    width: 155px;
+	height: 25px;
+    font-size: 14px;
+    margin-top: 9px;
+    padding-left: 5px;
+    background-color: #fff;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    border: #b3daff solid 1px;
+    
+}
+
+input.searchBtn {
+    width: 30px;
+    height: 30px;
+    vertical-align: -10px;
+    margin-left: 5px;
+}
+
+/* Footer */
+
+footer {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+#navFooter ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#navFooter li {
+    float: left;
+    border-left: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#navFooter li:first-child {
+    border-left: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#navFooter li a {
+    text-decoration: none;
+    font-size: 10px;
+}
+
