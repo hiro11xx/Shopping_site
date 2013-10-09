@@ -14,6 +14,9 @@ select {
     clear: both;
 }
 
+section {
+    margin: 20px 0;
+}
 /* Slider */
 #slider{
     background: #fff url(../images/loading.gif) no-repeat 50% 50%;
@@ -43,8 +46,12 @@ select {
  	float: left;
  	font-size: 18px;
  	padding: 0;
- 	margin: 0 14px 20px 14px;
+ 	margin: 0 15px 20px 15px;
  }
+
+#navTop li:first-child {
+    margin-left: 0;
+}
 
  #navTop li a {
  	display: block;
@@ -93,7 +100,7 @@ input.searchForm {
 }
 
 input.searchBox {
-    width: 155px;
+    width: 165px;
 	height: 25px;
     font-size: 14px;
     margin-top: 9px;
@@ -144,5 +151,6 @@ footer {
 #navFooter li a {
     text-decoration: none;
     font-size: 10px;
+    color: black;
 }
 
