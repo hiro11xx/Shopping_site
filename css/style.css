@@ -1,5 +1,28 @@
+@import url(http://fonts.googleapis.com/css?family=Henny+Penny);
+
 body {
 	background-image: url(../images/background2.gif);
+    font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+    color: #666666;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+ul a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+input {
+    font-family: Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-size: 1em;
 }
 
 input[type="text"],
@@ -7,16 +30,14 @@ input[type="password"],
 input[type="image"],
 textarea,
 select {
-    outline:none;
+    outline: none;
+    vertical-align: middle;
 }
 
 #clear {
     clear: both;
 }
 
-section {
-    margin: 20px 0;
-}
 /* Slider */
 #slider{
     background: #fff url(../images/loading.gif) no-repeat 50% 50%;
@@ -30,33 +51,36 @@ section {
  }
 
  /* Navigation */
- #navTop {
+
+#sectionTop {
+    margin: 20px 0;
+}
+
+#navTop {
  	width: 900px;
  	margin-left: auto;
  	margin-right: auto;
  }
 
- #navTop ul {
+#navTop ul {
  	margin: 0, 20;
  	padding: 0;
- 	list-style: none;
  }
 
- #navTop li {
+#navTop li {
  	float: left;
  	font-size: 18px;
  	padding: 0;
- 	margin: 0 15px 20px 15px;
+ 	margin: 0 14px 20px 14px;
  }
 
 #navTop li:first-child {
     margin-left: 0;
 }
 
- #navTop li a {
+#navTop li a {
  	display: block;
  	position: relative;
- 	text-decoration: none;
  	text-align: center;
  	color: #ffebf9;
  	float: left;
@@ -75,7 +99,12 @@ section {
     text-shadow: 0 -1px 0 #ff8fdb;
  }
 
- #navTop span{
+#navTop li a:hover {
+    color: #fff;
+    text-shadow: 0 -1px 0 #000;
+ }
+
+#navTop span{
     border: 1px dashed #ff8fdb;
     display: inline-block;
     padding: 4px 15px;
@@ -93,18 +122,22 @@ section {
     border-radius: 20px;
 }
 
+#navTop span:hover {
+    border-color: #fff;
+}
+
 /* Search */
 
-input.searchForm {
-
+.searchForm {
+    height: 36px;
+    margin-top: 7px;
 }
 
 input.searchBox {
     width: 165px;
-	height: 25px;
+	height: 26px;
     font-size: 14px;
-    margin-top: 9px;
-    padding-left: 5px;
+    padding-left: 10px;
     background-color: #fff;
     -moz-border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -116,7 +149,6 @@ input.searchBox {
 input.searchBtn {
     width: 30px;
     height: 30px;
-    vertical-align: -10px;
     margin-left: 5px;
 }
 
@@ -132,7 +164,6 @@ footer {
 #navFooter ul {
     margin: 0;
     padding: 0;
-    list-style: none;
 }
 
 #navFooter li {
@@ -149,8 +180,77 @@ footer {
 }
 
 #navFooter li a {
-    text-decoration: none;
     font-size: 10px;
-    color: black;
+    color: #000;
 }
 
+#navFooter li a:hover {
+    color: #ff4de7;
+}
+
+/* Clothes/Goods Page */
+
+#container {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#container .categoryNavi {
+    float: left;
+    width: 200px;
+}
+
+#container #searchNavi {
+    line-height: 35px;
+    font-size: 14px;
+    font-style: italic;
+    padding-left: 0;
+}
+
+#container #searchNavi p {
+    color: #f95f87;
+    border-bottom: 1px solid #f95f87;
+    background: url(../images/catnavi-icon-fashion.png) left center no-repeat;
+}
+
+#searchNavi p {
+    padding-left: 35px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+#container #searchNavi .outer {
+    height: 30px;
+}
+
+#container .categoryNavi #searchTitle {
+    line-height: 35px;
+    font-size: 14px;
+    font-style: italic;
+    color: #333;
+    border-bottom: 1px solid #333;
+    margin: 30px 0 20px 0;
+    padding-left: 35px;
+    background: url(../images/catnavi-icon-search.png) left center no-repeat;
+}
+
+#container .categoryNavi .searchSubtitle {
+    margin: 20px 0 0 0;
+} 
+
+#container .categoryNavi .searchTable {
+    width: 100%;
+}
+
+.searchKeyword {
+    width: 130px;
+}
+
+#container .categoryNavi .searchTable .right {
+    text-align: right;
+}
+
+#container .categoryNavi .searchPrice {
+    width: 50px;
+}
