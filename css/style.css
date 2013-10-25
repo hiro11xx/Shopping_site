@@ -15,17 +15,22 @@ header {
     margin-right: auto;
 }
 
+small {
+    font-size: 13px;
+}
+
 ul a {
     text-decoration: none;
 }
 
 ul li {
     list-style: none;
+    color: #222;
 }
 
 ul li a {
     text-decoration: none;
-    color: #666666;
+    color: #666;
 }
 
 h3 a {
@@ -201,6 +206,15 @@ footer {
     color: #ff4de7;
 }
 
+#shareNavi .shareList li {
+    float: right;
+}
+
+#shareNavi .shareList li img {
+    width: 40px;
+    height: 40px;
+}
+
 /* Clothes/Goods Page */
 
 #container {
@@ -209,9 +223,40 @@ footer {
     margin-right: auto;
 }
 
+#container .upperList {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#container .upperList li {
+    float: right;
+    font-size: 15px;
+    margin-left: 10px;
+    padding-right: 50px;
+}
+
+#container .upperList li a:hover {
+    color: #ff4de7;
+}
+
+#container .upperList li img {
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+#container .upperList .myPage img {
+    width: 25px;
+    height: 25px;
+    vertical-align: -5px;
+}
+
 #container .categoryNavi {
     float: left;
     width: 200px;
+    margin-top: 40px;
     background-color: #fff;
     padding: 0 10px 15px 10px;
     -moz-border-radius: 10px;
@@ -223,6 +268,7 @@ footer {
     -webkit-border-image: url(../images/woodframe.gif) 27 round;
     -o-border-image: url(../images/woodframe.gif) 27 round;
     border-image: url(../images/woodframe.gif) 27 round;
+    box-shadow: black 0 0 5px 0 inset;
 }
 
 #container #searchNavi {
@@ -232,16 +278,32 @@ footer {
     padding-left: 0;
 }
 
-#container #searchNavi p {
+#container #searchNavi .clothesTitle {
     color: #f95f87;
     border-bottom: 1px solid #f95f87;
     background: url(../images/catnavi-icon-fashion.png) left center no-repeat;
+}
+
+#container #searchNavi .goodsTitle {
+    color: #000;
+    border-bottom: 1px solid #000;
+    background: url(../images/stroller.png) left center no-repeat;
 }
 
 #searchNavi p {
     padding-left: 35px;
     cursor: pointer;
     margin-bottom: 15px;
+}
+
+#searchNavi .clothesList h3 a:hover,
+#searchNavi .goodsList h3 a:hover {
+    color: #ecffe5;
+}
+
+#searchNavi .clothesList .close a:hover,
+#searchNavi .goodsList .close a:hover {
+    text-decoration: underline;
 }
 
 #container #searchNavi .outer {
@@ -285,9 +347,20 @@ footer {
     width: 650px;
 }
 
+.products .clothesHead h1,
+.products .goodsHead h1 {
+    font-size: 30px;
+    font-style: italic;
+    margin-left: 20px;
+    margin-top: 0;
+    border-bottom: #ccc solid 1px;
+    color: #ccc;
+    text-shadow: #000 1px 1px 0;
+}
+
 .products .productsList .images {
     float: left;
-    padding-left: 25px;
+    padding: 0 0 20px 25px;
 }
 
 .products .productsList .images:first-child {
@@ -297,4 +370,45 @@ footer {
 .products .productsList .images img {
     width: 180px;
     height: 180px;
+}
+
+.products .pageNavi {
+    margin-top: 30px;
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    margin-left: 20px;
+}
+
+.products .pageNavi .paging {
+    text-align: center;
+}
+
+.products .pageNavi .pages {
+    margin: 0 16px;
+    color: #ccc;
+    line-height: 21px;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.products .pageNavi .pages li {
+    float: left;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.products .pageNavi .pages li a:hover {
+    color: #ff4de7;
+}
+
+.products .pageNavi .navipageForward {
+    margin-left: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.products .pageNavi .navipageForward img {
+    display: block;
 }
