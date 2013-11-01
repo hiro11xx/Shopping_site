@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Henny+Penny);
+@import url(http://fonts.googleapis.com/css?family=Prosto+One);
 
 body {
 	background-image: url(../images/background2.gif);
@@ -46,6 +47,8 @@ input {
 input[type="text"],
 input[type="password"],
 input[type="image"],
+input[type="submit"],
+input[type="button"],
 textarea,
 select {
     outline: none;
@@ -349,13 +352,14 @@ footer {
 
 .products .clothesHead h1,
 .products .goodsHead h1 {
-    font-size: 30px;
+    font-size: 19px;
     font-style: italic;
+    letter-spacing: 1px;
     margin-left: 20px;
     margin-top: 0;
     border-bottom: #ccc solid 1px;
     color: #ccc;
-    text-shadow: #000 1px 1px 0;
+    text-shadow: #666 1px 1px 0;
 }
 
 .products .productsList .images {
@@ -411,4 +415,206 @@ footer {
 
 .products .pageNavi .navipageForward img {
     display: block;
+}
+
+/* Maintenance */
+
+#maintenance {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box h1 {
+    text-align:center;
+    position:relative;
+    top:100px;
+    color: #391818;
+    font-size: 18px;
+    font-family: 'Prosto One', cursive;
+}
+
+.box {
+    width:70%;
+    height:300px;
+    background: url(../images/pigg_board.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 400px auto;
+    margin:40px auto;
+}
+
+/* mypage */
+
+#myPage {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+#myPage .wrapper {
+    width: 70%;
+    background: #fff;
+    margin: 40px auto;
+}
+
+#myPage .paper {
+  position: relative;
+}
+
+#myPage .paper:before, #myPage .paper:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+
+#myPage .paper:after {
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+
+#myPage article {
+    float: left;
+    width: 250px;
+    margin-left: 30px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+#myPage .first {
+    border: 0;
+    margin-left: 50px;
+    text-align: left;
+    margin-top: 0px;
+    letter-spacing: 1px;
+}
+
+#myPage article h2 {
+    margin: 0.4em 0em;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.4em;
+    font-size: 15px;
+    border-bottom: 1px solid #ddd;
+    color: #666;
+}
+
+#myPage article p {
+    padding: 0px 10px;
+    display: block;
+    min-height: 66px;
+    text-align: center;
+    text-transform: none;
+    letter-spacing: 0;
+    margin: 1em 0;
+    font-family: "FuturaPT-Light", sans-serif;
+    font-size: 13px;
+}
+
+#myPage article form {
+    width: 236px;
+    margin: 0;
+    display: block;
+}
+
+#myPage article fieldset {
+    text-align: left;
+    margin: 1em 0em;
+    border: 0;
+    padding: 0;
+}
+
+#myPage article fieldset label {
+    font-size: 0.7em;
+    cursor: default;
+}
+
+#myPage article input[type="text"] {
+    font-size: 15px;
+    height: 35px;
+    float: left;
+    display: block;
+    padding-left: 15px;
+    padding-top: 2px;
+    border: 1px solid #ddd;
+}
+
+#myPage article input[type="password"] {
+    font-size: 15px;
+    height: 35px;
+    float: left;
+    display: block;
+    padding-left: 15px;
+    padding-top: 2px;
+    border: 1px solid #ddd;
+}
+
+#myPage article a {
+    font-size: 0.7em;
+}
+
+#myPage article .loginButton {
+    width: auto;
+    float: right;
+    margin: 2em 0em;
+    text-align: left;
+    position: relative;
+    background: #fff url(../images/login.png) no-repeat 3px 3px;
+    background-position: 13px 4px;
+    border: 0;
+    font-size: .8125em;
+    color: #666;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    min-height: 41px;
+    padding: 12px 30px 12px 50px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    cursor: pointer;
+    line-height: normal;
+    vertical-align: baseline;
+}
+
+#myPage article .newAccount {
+    margin-top: 18px;
+    width: 80%;
+    font-size: 0.75em;
+    min-height: 40px;
+    padding-bottom: 12px;
+    padding-top: 11px;
+    background: #fff;
+    color: #666;
+    border: 1px solid #ddd;
+    padding: 12px 40px 12px 40px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    line-height: normal;
+    vertical-align: baseline;
 }
