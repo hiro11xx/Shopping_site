@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+ <meta charset="UTF-8">
+ <title>Shopping site</title>
+ <link rel="stylesheet" href="css/style.css" type="text/css">
+ <link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css">
+ <link rel="stylesheet" href="css/icomoon-style.css" type="text/css">
+ <script type='text/javascript' src='js/jquery-1.9.0.min.js'></script>
+ <script type='text/javascript' src='js/jquery.easing1.3.js'></script>
+ <script type='text/javascript' src='js/jquery.bxSlider.js'></script>
+ <script type='text/javascript' src='js/jquery.fitvids.js'></script>
+ <script type='text/javascript'>
+ $(document).ready(function() {
+  $('.bxslider').bxSlider({
+    pagerCustom: '#bx-pager',
+    auto: false, /* 自動再生 */
+    autoControls: false,  /* スタート、ストップボタン */
+    pager: true, /* ページャー */
+    mode: 'horizontal', /* fade,vertical など */
+    speed: 500, /* エフェクトのスピード */
+    controls: false, /* 前へ、次へボタンの表示 */
+    prevText: '&lt;', /* 前へボタンのテキスト */
+    nextText: '&gt;', /* 次へボタンのテキスト */
+    pause: 4000, /* 間隔の時間 */
+    easing: 'swing', /* Easing */
+    autoHover: true /* マウスホバーで停止 */
+  });
+ });
+ </script>
+ </head>
+
+ <body>
+
+ 		<header>
+ 			<nav id="navTop">
+ 				<ul>
+ 					<li><a href="index.html">Home</a></li>
+ 					<li><a href="clothes.html"><span>Clothes</span></a></li>
+ 					<li><a href="goods.html"><span>Goods</span></a></li>
+ 					<li><a href="maintenance.html"><span>About us</span></a></li>
+ 					<li><a href="maintenance.html"><span>Location</span></a></li>
+ 					<li><form action="#" method="post" class="searchForm"><input type="text" name="search" class="searchBox"><button type="submit" name="search" class="searchBtn"></button></form></li>
+ 				</ul>
+ 			</nav>
+        <div id="clear"></div>
+ 		</header>
+
+ 		<section id="container">
+
+      <div class="upperList">
+        <ul id="headerNavi">
+          <li class="shoppingcart"><a href="">Cart</a></li>
+          <li class="myPage"><a href="mypage.html">My Page</a></li>
+        </ul>
+      </div>
+      <div id="clear"></div>
+
+      <div class="productsPage">
+        <div class="left">
+         <ul class="bxslider">
+           <li><img src="images/sample-big.jpg" /></li>
+           <li><img src="images/sample-big.jpg" /></li>
+           <li><img src="images/sample-big.jpg" /></li>
+         </ul>
+
+         <div id="bx-pager">
+           <a data-slide-index="0" href=""><img src="images/sample-thumb.jpg" /></a>
+           <a data-slide-index="1" href=""><img src="images/sample-thumb.jpg" /></a>
+           <a data-slide-index="2" href=""><img src="images/sample-thumb.jpg" /></a>          
+         </div>
+        </div>
+
+        <div class="right">
+          <div id="productInfo">
+            <div class="details">
+              <h3>Product Name</h3>
+              <h5>Price ￥000,000</h5>
+              <p>Product Information</p>
+              <h5>Materials</h5>
+            </div>
+
+            <div class="selectBtn">
+              <div class="controls">
+                <div class="size">
+                  <select id="sizeSelect" name="sizeSelect" required>
+                    <option value="8" selected="selected">Select Size</option>
+                    <option value="8">M</option>
+                    <option value="9">L</option>
+                    <option value="10">XL</option>
+                  </select>
+                </div>
+              </div>
+              <input type="hidden" name="" value="">
+              <div class="form-actions">
+                <input id="add-to-cart-button" type="submit" name="submit" value="+ Add to cart" class="btn btn-primary">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+ 		</section>
+
+ 		<div id="clear"></div>
+ 		<footer>
+      		<nav id="navFooter">
+        	<ul>
+          	<li><a href="">初めての方へ</a></li>
+          	<li><a href="">お問い合わせ</a></li>
+          	<li><a href="">よくある質問</a></li>
+          	<li><a href="">プライバシポリシー</a></li>
+        	</ul>
+      		</nav>
+
+          <div id="shareNavi">
+            <ul class="shareList">
+              <li><a href=""><img src="images/google.png"></a></li>
+              <li><a href=""><img src="images/twitter.png"></a></li>
+              <li><a href=""><img src="images/facebook.png"></a></li>
+            </ul>
+          </div>
+
+          <div id="clear"></div>
+
+      		<small>Copyright &copy; M and H, all right reserved.</small>
+ 		</footer>
+ </body>
+</html>
