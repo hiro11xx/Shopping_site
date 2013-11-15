@@ -28,6 +28,20 @@
   });
  });
  </script>
+ <script type='text/javascript'>
+ $(document).ready(function(){
+  $('.recommendSlider').bxSlider({
+  minSlides: 3,
+  maxSlides: 4,
+  slideWidth: 180,
+  slideMargin: 10,
+  controls: true, /* 前へ、次へボタンの表示 */
+  prevText: 'Prev', /* 前へボタンのテキスト */
+  nextText: 'Next', /* 次へボタンのテキスト */
+  speed: 1000, /* エフェクトのスピード */
+  });
+ });
+ </script>
  </head>
 
  <body>
@@ -36,10 +50,10 @@
  			<nav id="navTop">
  				<ul>
  					<li><a href="index.html">Home</a></li>
- 					<li><a href="clothes.html"><span>Clothes</span></a></li>
- 					<li><a href="goods.html"><span>Goods</span></a></li>
- 					<li><a href="maintenance.html"><span>About us</span></a></li>
- 					<li><a href="maintenance.html"><span>Location</span></a></li>
+ 					<li><a href="clothes.html">Clothes</a></li>
+ 					<li><a href="goods.html">Goods</a></li>
+ 					<li><a href="maintenance.html">About us</a></li>
+ 					<li><a href="maintenance.html">Location</a></li>
  					<li><form action="#" method="post" class="searchForm"><input type="text" name="search" class="searchBox"><button type="submit" name="search" class="searchBtn"></button></form></li>
  				</ul>
  			</nav>
@@ -98,6 +112,22 @@
             </div>
           </div>
         </div>
+      </div>
+      <div id="clear"></div>
+
+      <div class="recommend">
+        <h4>recommend</h4>
+        <div id="clear"></div>
+        <ul class="recommendSlider">
+          <li><a href=""><img src="images/sample-middle.jpg" /></a></li>
+          <li><a href=""><img src="images/sample-middle.jpg" /></a></li>
+          <li><a href=""><img src="images/sample-middle.jpg" /></a></li>
+          <li><a href=""><img src="images/sample-middle.jpg" /></a></li>
+          <li><a href=""><img src="images/sample-middle.jpg" /></a></li>
+          <li><a href=""><img src="images/sample-middle.jpg" /></a></li>
+          <li><a href=""><img src="images/sample-middle.jpg" /></a></li>
+          <li><a href=""><img src="images/sample-middle.jpg" /></a></li>
+        </ul>
       </div>
  		</section>
 

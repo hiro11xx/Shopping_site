@@ -712,16 +712,16 @@ footer {
     text-align: center;
 }
 
-#container #bx-pager a {
+#container .productsPage #bx-pager a {
     margin: 0 3px;
 }
 
-#container #bx-pager a img {
+#container .productsPage #bx-pager a img {
     border: solid #ccc 1px;
 }
 
-#container #bx-pager a:hover img,
-#container #bx-pager a.active img {
+#container .productsPage #bx-pager a:hover img,
+#container .productsPage #bx-pager a.active img {
     border: solid #abd3ee 1px;
 }
 
@@ -865,4 +865,73 @@ footer {
 
 .btn-primary:hover {
     text-shadow: -1px -1px 1px #ccc;
+}
+
+#container .recommend {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#container .recommend {
+    
+}
+
+#container .recommend a {
+    margin: 0 3px;
+}
+
+#container .recommend a img {
+    border: solid #ccc 2px;
+}
+
+#container .recommend  a:hover img,
+#container .recommend  a.active img {
+    border: solid #abd3ee 2px;
+}
+
+#container .recommend .recommendSlider ul {
+    margin: 0;
+    padding: 0;
+}
+
+#container .recommend .bx-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#container .recommend .bx-wrapper .bx-viewport {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    background: none;
+    left: 3px;
+}
+
+#container .recommend .bx-wrapper .bx-prev {
+    left: -60px;
+}
+
+#container .recommend .bx-wrapper .bx-next {
+    right: -60px;
+}
+
+#container .recommend {
+    border-top: #ccc solid 1px;
+    border-bottom: #ccc solid 1px;
+    margin-top: 50px;
+}
+
+#container .recommend h4 {
+    float: right;
+    margin: 0;
+    padding: 3px;
+    font-size: 16px;
+    border: #ccc solid 1px;
+    background-color: #ccc;
+    color: #fff;
+    text-shadow: -1px -1px #999;
+    letter-spacing: 1px;
+    box-shadow: 1px 1px 1px #999;
 }
